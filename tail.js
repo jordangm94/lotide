@@ -10,7 +10,7 @@ const tail = function(array) {
   return array.slice(1);
 };
 
-//Testing for one elemnet in array and empty array: Should produce empty array! 
+//Testing for one elemnet in array and empty array: Should produce empty array!
 
 console.log(tail([2]));
 console.log(tail([]));
