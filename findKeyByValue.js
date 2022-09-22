@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 
 const findKeyByValue = function(object, value) {
   for (const key in object) {
-    if (object[key] === value) {
+    if (object[key] === value) { //So here object is accessing the KEY and then KEY is accessing the value! eqO
       return key;
     }
   }
