@@ -1,9 +1,4 @@
-const eqArrays = function(array1, array2) {
-  if (array1.join() === array2.join()) {
-    return true;
-  }
-  return false;
-};
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
@@ -13,5 +8,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-assertArraysEqual([5, 2, 3], [7, 2, 9]);
-assertArraysEqual([5, 2, 3], [5, 2, 3]);
+// assertArraysEqual([5, 2, 3], [7, 2, 9]);
+// assertArraysEqual([5, 2, 3], [5, 2, 3]);
+
+module.exports = assertArraysEqual;
