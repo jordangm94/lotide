@@ -1,5 +1,9 @@
 //This file makes all functions from Lotide accessible via one require!
 
+//This document references just a key in the object to define the key
+//and reference the value thanks to new ES6 Syntax. Hence, instead of
+//writing head: head, we can just right head
+
 const head = require('./head');
 
 const tail = require('./tail');
@@ -33,20 +37,20 @@ const takeUntil = require('./takeUntil');
 const without = require('./without');
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  assertEqual: assertEqual,
-  eqArrays: eqArrays,
-  assertArraysEqual: assertArraysEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqObjects: eqObjects,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  letterPositions: letterPositions,
-  map: map,
-  takeUntil: takeUntil,
-  without: without
+  head,
+  tail,
+  middle,
+  assertEqual,
+  eqArrays,
+  assertArraysEqual,
+  assertObjectsEqual,
+  countLetters,
+  countOnly,
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  letterPositions,
+  map,
+  takeUntil,
+  without
 };
