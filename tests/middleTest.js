@@ -1,7 +1,5 @@
 const assertArraysEqual = require('../assertArraysEqual');
 
-const eqArrays = require('../eqArrays');
-
 const middle = require('../middle');
 
 //Console.log tests for odd number arrays and array less than 2.
