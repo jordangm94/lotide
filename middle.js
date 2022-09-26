@@ -1,7 +1,5 @@
 const assertArraysEqual = require('./assertArraysEqual');
 
-
-
 const middle = function(array) {
   const evenArrayNumb = [];
   if (array.length <= 2) {
