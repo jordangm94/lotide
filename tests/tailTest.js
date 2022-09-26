@@ -6,12 +6,12 @@ const assert = require('chai').assert;
 
 describe("#tail", () => {
   it("returns an empty array if nothing is inputted in the array []", () => {
-    assert.deepEqual(assertEqual(tail([]), []));
+    assert.deepEqual(tail([]), []);
   });
   it("returns an empty array if nothing is inputted in the array []", () => {
-    assert.deepEqual(assertEqual(tail([2]), []));
+    assert.deepEqual(tail([2]), []);
   });
   it("If incoming array is populated, returns a new array with everything but the first element", () => {
-    assert.deepEqual(assertEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]));
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
   });
 });
